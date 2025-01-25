@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vh;
+}
+
+.panelbtneliminarCuenta {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 262px;
+    background-color: antiquewhite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+}
+
+.msgPanel {
+    position: absolute;
+    width: 262px;
+    background-color: antiquewhite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+}
+
+.msgPanel p{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
