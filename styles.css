@@ -7,16 +7,17 @@ body {
     width: 100vh;
 }
 
-.panelbtneliminarCuenta {
-    display: flex;
-    justify-content: center;
+.btnEliminarCuenta {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: bisque;
+    cursor: pointer;
     position: absolute;
-    width: 262px;
-    background-color: antiquewhite;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 25px;
 }
 
 .msgPanel {

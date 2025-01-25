@@ -18,21 +18,22 @@ function panelEliminarCuenta() {
     panel.appendChild(btnSi); 
     panel.appendChild(btnNo); 
 
-    btnSi.addEventListener('click', () => verificacion(true));
+    btnSi.addEventListener('click', () => verificacion(true, msg, btnSi, btnNo));
 
-    btnNo.addEventListener('click', () => verificacion(false) );
+    btnNo.addEventListener('click', () => verificacion(false, msg, btnSi, btnNo));
 
-    function verificacion(eliminarCuenta) {
-        if (eliminarCuenta === true) {
-            msg.textContent = 'Su cuenta ha sido eliminada satisfactoriamente';
-            btnSi.parentNode.removeChild(btnSi);
-            btnNo.parentNode.removeChild(btnNo);
-        }else if(eliminarCuenta === false){
-            msg.textContent = '¡Gracis por continuar con nosotros!';
-            btnSi.parentNode.removeChild(btnSi);
-            btnNo.parentNode.removeChild(btnNo);
-        }
     
-    }
 }
 
+function verificacion(eliminarCuenta, msg, btnSi, btnNo) {
+    if (eliminarCuenta === true) {
+        msg.textContent = 'Su cuenta ha sido eliminada satisfactoriamente';
+        btnSi.parentNode.removeChild(btnSi);
+        btnNo.parentNode.removeChild(btnNo);
+    }else if(eliminarCuenta === false){
+        msg.textContent = '¡Gracias por continuar con nosotros!';
+        btnSi.parentNode.removeChild(btnSi);
+        btnNo.parentNode.removeChild(btnNo);
+    }
+
+}
